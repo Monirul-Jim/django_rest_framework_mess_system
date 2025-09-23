@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# dotenv
+.env
+.env.*
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Mac/Linux/Windows system files
+.DS_Store
+Thumbs.db
+
+# Migrations (optional - sometimes you want to track them)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Vercel
+.vercel/
+
+# __pycache__ (redundant, but safer)
+**/__pycache__/
+
+# Backup files
+*.bak
+*.swp
+
+# Test coverage
+htmlcov/
+.coverage
+coverage.xml
+.cache
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# pip tools
+pip-log.txt
+
+# Jupyter (in case you're testing)
+.ipynb_checkpoints/
