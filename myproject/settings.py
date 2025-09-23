@@ -79,7 +79,8 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": config("DATABASE_NAME", default=BASE_DIR / "db.sqlite3"),
+        "NAME": config("DATABASE_NAME"),
+        # "NAME": config("DATABASE_NAME", default=BASE_DIR / "db.sqlite3"),
         "USER": config("DATABASE_USER", default=""),
         "PASSWORD": config("DATABASE_PASSWORD", default=""),
         "HOST": config("DATABASE_HOST", default=""),
@@ -157,7 +158,7 @@ SIMPLE_JWT = {
 #     # Add your frontend URLs here
 # ]
 CORS_ALLOWED_ORIGINS = config(
-    "CORS_ALLOWED_ORIGINS", default="", cast=Csv()
+    "CORS_ALLOWED_ORIGINS", cast=Csv()
 )
 
 CORS_ALLOW_CREDENTIALS = True
@@ -188,7 +189,7 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Optional for development
-STATICFILES_DIRS = [BASE_DIR / 'static']
+# STATICFILES_DIRS = [BASE_DIR / 'static']
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 

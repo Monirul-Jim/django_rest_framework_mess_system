@@ -398,6 +398,7 @@ def manage_contributions(request, mess_id, month):
                 )
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
 # @api_view(['GET', 'POST'])
 # @permission_classes([IsAuthenticated])
 # def become_member_request(request):
