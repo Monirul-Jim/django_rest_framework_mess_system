@@ -85,6 +85,11 @@ DATABASES = {
         "PASSWORD": config("DATABASE_PASSWORD"),
         "HOST": config("DATABASE_HOST"),
         "PORT": config("DATABASE_PORT"),
+        'OPTIONS': {
+         'options': '-c statement_timeout=3000',
+         'connect_timeout': 10
+}
+
       
     }
 }
